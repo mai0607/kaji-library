@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+}
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  background-color: #f0e7de;
+  color: #4a362a;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+}
+
+.logo {
+  width: 170px;
+  position: absolute;
+  top: 0;
+  margin-top: 50px;
+}
+
+.info {
+  text-align: center;
+  font-weight: 300;
+}
+
+.info > b {
+  font-weight: 700;
+}
+
+.item {
+  margin-bottom: 35px;
+}
+
+.message {
+  font-weight: 300;
+}
+
+.flex {
+  display: flex;
+}
+
+.allCard {
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+}
+
+.card {
+  background-color: white;
+  width: 300px;
+  height: 100px;
+  border-radius: 20px;
+  padding: 10px 20px;
+  display: flex;
+  margin-bottom: 18px;
+}
+
+.blankCard {
+  /* background-color: white; */
+  width: 300px;
+  height: 100px;
+  border-radius: 20px;
+  padding: 10px 20px;
+  border: dashed 3px #4a362a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blankCard > img {
+  width : 15%;
+}
+
+
+.card > img {
+  height: 100px;
+  margin-right: 20px;
+}
+
+.card > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.card > div > p {
+  font-size: 20px;
+  margin: 0;
+}
+
+
+
+.sendButton {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  position: fixed;
+  right: 30px;
+  bottom: 25px;
+  border: none;
+  outline: none;
+  transition: .3s;
+  background-color: #f0e7de;
+}
+
+.sendButton:hover {
+  background-color: #4a362a;
+}
+
+.wave {
+  width: 100%;
+  height: 50px;
+  background-color: #d9b891;
+  position: absolute;
+  bottom: 0;
+}
+
+.wave::after {
+  content: "";
+  width: 100%;
+  height: 150px;
+  background-image: url("../image/wave.svg");
+  background-size: 300px auto;
+  background-position: bottom;
+  background-repeat: repeat-x;
+  position: absolute;
+  top: -145px;
+}

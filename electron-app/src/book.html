@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>kaji_library</title>
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/cover.css">
+</head>
+
+<body>
+    <div class='wrapper'>
+        <img class='logo' src='image/kaji_library.svg'>
+
+        <!-- デバッグ用 -->
+        <div class='buttons'>
+            <button onclick="window.history.back()">前へ</button>
+            <button onclick="resetState()">DataReset</button>
+        </div>
+
+        <div class="flex">
+            <p id="slackName">なまえ</p>
+            <p>さん</p>
+        </div>
+
+        <div id="allCard" class="allCard">
+
+            <div id="blankCard" class="blankCard">
+                <img src="image/24px.svg">
+            </div>
+
+        </div>
+
+
+        <div class="wave"></div>
+        <button type="button" class="sendButton" id="sendDataButton">
+            <img src="image/send-black-18dp.svg">
+        </button>
+
+    </div>
+    <script src="./js/book.js" type="module"></script>
+</body>
+
+</html>

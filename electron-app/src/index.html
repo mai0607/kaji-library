@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>kaji_library</title>
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/cover.css">
+</head>
+
+<body>
+    <div class='wrapper'>
+        <img class='logo' src='image/kaji_library.svg'>
+
+        <!-- デバッグ用 -->
+        <style>
+            .buttons {
+                display: flex;
+            }
+
+            .buttons>button {
+                margin-right: 20px;
+            }
+        </style>
+        <div class='buttons'>
+            <script>
+                const mockData = {
+                    user: { id: "xxxxxxx", slackName: "/owo/" }
+                }
+            </script>
+            <button onclick="setState(mockData)">
+                MockDataSet
+            </button>
+            <button onclick="location.href = './welcome.html'">welcomeへ</button>
+        </div>
+
+        <p class='info item'>貸出は<b>学生証</b>から<br>返却は<b>本</b>を</p>
+        <p class='message'>リーダにかざしてください</p>
+        <div class="wave"></div>
+    </div>
+
+    <!-- 順番気をつけて！！！ -->
+    <script src="./js/api.js" type="module"></script>
+    <script src="./js/stateManager.js" type="module"></script>
+    <script src="./js/index.js" type="module"></script>
+
+</body>
+
+</html>
